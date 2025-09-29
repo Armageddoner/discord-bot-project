@@ -22,6 +22,7 @@ intents.messages = True
 bot = commands.Bot(command_prefix='*', intents=intents)
 
 # functions
+#test lmao
 
 if __name__ == "__main__": # bitch ass token wanna throw an error. IT IS a string
     bot.run(TOKEN, log_handler=handler, log_level=logging.DEBUG) # type: ignore

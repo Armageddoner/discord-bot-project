@@ -5,11 +5,14 @@ app = Flask("")
 
 @app.route("/")
 def home():
-    return("Server is still live.")
+    print("got pinged")
+    
+    return "DQMOT Still Live", 200
 
 def run():
-    app.run(host="0.0.0.0", port=8080)
+    app.run(host="0.0.0.0", port=5000)
 
 def keepAlive():
     t = Thread(target=run)
+
     t.start()
